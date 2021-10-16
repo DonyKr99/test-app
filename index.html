@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/e57c2904bb.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="#">BRAND</a>
+      </div>
+      <div class="links">
+        <a href="#">Apie</a>
+        <a href="#">Galerija</a>
+        <div class="dropdown drop">
+          <button class="dropbtn">Nustatymai
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <button type="button" onclick="mySetFunction()">Pakeisti šriftą</button>
+            <button type="button" onclick="myResetFunction()">Gražinti šriftą</button>
+            <button onclick="myFunction()">Naktinis režimas</button>
+          </div>
+        </div>
+        <a href="#">Kontaktai</a>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">Apie</a>
+      <a href="#">Galerija</a>
+      <a href="#">Kontaktai</a>
+      <div class="dropdown drop overlay-drop">
+        <button class="dropbtn">Nustatymai
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="overlay-container">
+        <div class="dropdown-content content-overlay">
+          <button type="button" onclick="mySetFunction()">Pakeisti šriftą</button>
+          <button type="button" onclick="myResetFunction()">Gražinti šriftą</button>
+          <button onclick="myFunction()">Naktinis režimas</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-bg">
+    <div class="content">
+		<font><h1 class="form-h3">Anketa</h1></font><br><br>
+    <br><br>
+		<form name="myForm" onsubmit="return checkForm(this);" class="form-center" action="" method="post">
+      <b>Jūsų duomenys</b>
+      <br>
+      <br>
+      <br>
+		  <br><input type="text" name="inputName"  placeholder="Vardas"><br><br>
+			<br><input type="text" name="inputLastName"  placeholder="Pavardė"><br><br>
+			<br><input type="text" name="inputPhoneNumber"  placeholder="Mobilaus telefono numeris"><br><br>
+      <br>
+			<br>
+
+        <br>
+        <input class="get-started" type="submit" name="submit" value="Prenumeruoti">
+
+
+		</form>
+	</div>
+    <article class="main-article">
+      <h1>Lorem ipsum</h1>
+      <br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </article>
+  </div>
+
+  <!-- OBJECTS -->
+  <div class="obj-container">
+    <div class="obj-1 obj">
+      <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="">
+      <article>
+        <h2>Lorem</h2>
+        <p id="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+      </article>
+      <p>
+      <a class="link" href="pages\page2.html" target="_self">Sužinoti daugiau</a>
+      </p>
+    </div>
+    <div class="obj-2 obj">
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="">
+      <article>
+        <h2>Lorem</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+      </article>
+      <p>
+      <a class="link" href="pages\page2.html" target="_self">Sužinoti daugiau</a>
+      </p>
+    </div>
+    <div class="obj-3 obj">
+      <img src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1172&q=80" alt="">
+      <article>
+        <h2>Lorem</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+      </article>
+      <p>
+      <a class="link" href="pages\page2.html" target="_self">Sužinoti daugiau</a>
+      </p>
+    </div>
+  </div>
+
+
+  <div class="rights">
+        <div class="terms">
+          <ul>
+              <li><a href="">Apie</a></li>
+              <li><a href="">Kontaktai</a></li>
+              <li><a href="">Privatumo politika</a></li>
+          </ul>
+          <p>© Jūsų tinklalapis 2021. Visos teisės apsaugotos.</p>
+        </div>
+            <div class="social">
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-twitter"></i>
+              </div>
+      </div>
+
+      <button class="scrollToTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
